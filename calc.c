@@ -35,6 +35,12 @@ float max (float x, float y)
 	else
 		return y;
 }
+
+float mod (float x, float y)
+{
+	return x % y;
+}
+
 int main()
 {
     float a, b, r;
@@ -52,10 +58,12 @@ int main()
            	      break;
            case '/' : r = div(a,b);
            	      break;
-           case 'm' : r = minimum(a,b);
+           case 'm' : r = min(a,b);
            	      break;
-           case 'M' : r = maximum(a,b);
+           case 'M' : r = max(a,b);
            	      break;
+	   case 'r' : r = mod(a,b);
+		      break;
            case 'q' : break;
            default  : op='?';
        }
