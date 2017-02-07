@@ -52,9 +52,9 @@ int main()
            	      break;
            case '/' : r = div(a,b);
            	      break;
-           case 'm' : r = minimum(a,b);
+           case 'm' : r = min(a,b);
            	      break;
-           case 'M' : r = maximum(a,b);
+           case 'M' : r = max(a,b);
            	      break;
            case 'q' : break;
            default  : op='?';
